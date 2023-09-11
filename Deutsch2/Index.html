@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Deutsch2</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3909/3909219.png">
+        <script src="https://kit.fontawesome.com/df212631bc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <style>
+            *{
+                margin: 0px;
+            }
+           h1{
+             font-family: Arial, Helvetica, sans-serif; text-shadow: #0f987a9e; color:rgb(9, 59, 9); 
+           }
+
+           h2{
+            color: lightcoral; font-family: cursive; font-style: italic; font-size: 21px;
+           }
+           a{text-decoration: none; color: rgb(9, 9, 145);}
+
+           a:hover{background-color: rgb(159, 255, 223);}
+
+           .pointer {cursor: pointer; color: rgb(77, 77, 77);}
+        </style>
+        
+    </head>
+
+    <body>
+        <div id="banner" style="background-color: #0f987a9e; height: 100px; padding-left: 10px; padding-right: 20px;" >
+            <h1>Deutsche Grammatikbibliothek <i class="fa-solid fa-earth-europe"></i></h1> <br>
+            <span class="material-symbols-sharp">
+                search
+                </span>
+            <input type="text" id="text" placeholder="Search" style="border-radius: 10px; font-size: larger;">
+            <a target="_blank" href="http://127.0.0.1:5500/Deutsch2/Login%20Page.html" style="float: right;">Login</a>
+             
+        </div>
+        <div style="background-color: rgba(253, 210, 216, 0.551); height: 40px; padding-left: 10px;">
+            <h2>This is a personal German Grammar Liberary</h2>
+        </div>
+
+        <div  style="background-color: rgba(255, 245, 230, 0.83); height: 160px; padding-left: 10px;">
+            <br>
+            <p style="font-size: larger; font-style: italic; ">Contents:</p>
+            <ul>
+                <li><a target="_blank" href="http://127.0.0.1:5500/Deutsch2/Numbers.html">Numbers</a> </li>
+                <li><a target="_blank" href="http://127.0.0.1:5500/Deutsch2/Artikels.html">Artikels</a></li>
+                <li><a target="_blank" href="http://127.0.0.1:5500/Deutsch2/Personal%20Pronomen.html">Personal Pronomen</a> </li>
+                <li><a target="_blank" href="http://127.0.0.1:5500/Deutsch2/Verben.html">Verben</a></li>
+                <li>Preposition</li>
+            </ul>
+        </div>
+
+        <div style="padding: 10px;">
+            <p>Rate this website!</p>
+
+            <div class="pointer">
+                <span onclick="IncrementLikes()" class="material-symbols-outlined">
+                    thumb_up
+                </span>
+                <span id="counter1">0</span>
+    
+                <span onclick="IncrementDislikes()" class="material-symbols-outlined" style="padding-left: 8px;">
+                        thumb_down
+                </span>
+                <span id="counter2">0</span>
+    
+                <span class="material-symbols-outlined" style="padding-left: 8px;">
+                    chat_bubble
+                </span>
+                <span>0</span>
+            </div>
+            
+        </div>
+
+        <script>
+            var Likes =0;
+            function IncrementLikes(){
+                Likes= Likes+1;
+                document.getElementById("counter1").innerHTML = Likes;
+            }
+
+            var Dislikes =0;
+            function IncrementDislikes(){
+                Dislikes= Dislikes+1;
+                document.getElementById("counter2").innerHTML = Dislikes;
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1177/1177568.png">
+        <style>
+            input{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="text-align: center;">
+            <h2 >Login</h2>
+           
+               <input type="text" id="Username" value="" placeholder="Username"><br><br>
+              <input type="text" id="Password" value="" placeholder="Password"><br><br>
+              <button onclick="Login()">Login</button>
+              <br>
+            
+          
+        </div>
+
+        <script>
+            function Login() {
+                var Username = document.getElementById("Username").value;
+                var Password = document.getElementById("Password").value;
+               if(Username == "Advyta" && Password == "Gauri"){
+                alert("Logged in successfully!");
+               }
+               else{
+                alert("Login Failed!");
+               }
+            }
+            
+        </script>
+
+    </body>
+</html>
